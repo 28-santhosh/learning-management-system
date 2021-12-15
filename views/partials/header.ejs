@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E COu</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="box-area">
+  <header>
+    <div class="wrapper"><nav>
+      <ul>
+   <li> <h1><a href="/">E COu</a></h1></li>
+    <li><h3><a href="/about">About</a></h3></li>
+    </ul>
+    
+    <ul>
+      <% if (user) { %>
+        <li style="color: white;">Welcome, <%= user.email %></li>
+        <li><a href="/logout" class="btn1">Logout</a></li>
+      <% } else { %>
+        <li><a href="/login" class="btn1">Login</a></li>
+        <li><a href="/signup" class="btn1">Sign up</a></li>
+      <% } %>
+    </ul>
+  </nav>
+  </div>
+  </header>
+ 
